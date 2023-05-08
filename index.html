@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lexend Deca', sans-serif;
+      background-color: var(--slave-king);
+    }
+    :root{
+      --slave-king:hsl(233, 47%, 7%);
+      --slave-prince:hsl(244, 38%, 16%);
+      --violett:hsl(277, 64%, 61%);
+      --ww:hsl(0, 0%, 100%);
+      --white:hsla(0, 0%, 100%, 0.6);
+      --white-head:hsla(0, 0%, 100%, 0.75);
+
+
+    }
+    .f-inter{
+      font-family: 'Inter', sans-serif;
+    }
+    .f-deca{
+      font-family: 'Lexend Deca', sans-serif;
+    }
+    .box{
+      width: 1200px;
+      height: 550px;
+      border-radius: 15px;
+      margin: 0 auto;
+      display: flex;
+      margin-top: 10%;
+      background-color: var(--slave-prince);
+    }
+    .left-side{
+      width: 50%;
+    }
+    .header{
+      width: 400px;
+      font-size: 32px;
+      font-weight: 700;
+      margin:75px auto ;
+      color: var(--ww);
+    }
+    .color-purple{
+      color: var(--violett);
+    }
+    .paragraph{
+      width: 400px;
+      text-align: left;
+      margin: 12% auto;
+      color: var(--white);
+
+    }
+    .sub{
+      display: flex;
+   
+    }
+    .sub>div{
+      margin-left: 85px;
+      font-size: 24px;
+      color: var(--ww);
+    }
+    .sub-info{
+      display:block;
+      font-size: 15px;
+      font-weight:400 ;
+      text-transform: uppercase;
+      color: var(--white-head);
+    }
+    .right-side{
+      width: 50%;
+      background: linear-gradient(
+        9deg,
+        hsla(277, 64%, 61%, 0.45) 0%,
+        hsla(277, 64%, 61%, 0.5) 100%
+      ),
+      url(images/image-header-desktop.jpg);
+      background-repeat: no-repeat ;
+      background-size:cover ;
+      border-radius: 0 15px 15px 0;
+
+    }
+    .attribution { font-size: 11px; text-align: center;position: absolute;bottom: 15px;left: 45%; color: var(--ww); }
+    .attribution a { color: var(--white-head); }
+  </style>
+</head>
+<body>
+<main>
+    <section class="box">
+      <article class="left-side">
+      <h3 class="header f-inter">  Get <span class="color-purple"> insights</span> that help your business grow.</h3>
+
+      <p class="paragraph f-inter">  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+        <article class="sub">
+          <div> <h2> 10k+ <span class="sub-info f-deca">companies</span> </h2> </div>
+          <div><h2>314 <span class="sub-info">templates</span> </h2></div>
+
+          <div> <h2> 12m+ <span class="sub-info">queries</span> </h2></div>
+
+        </article>
+
+      </article>
+      <article class="right-side"></article>
+    </section>
+</main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yetkin Karasungur</a>.
+  </div>
+</body>
+</html>

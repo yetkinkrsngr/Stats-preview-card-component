@@ -96,9 +96,48 @@
       background-repeat: no-repeat ;
       background-size:cover ;
       border-radius: 0 15px 15px 0;
-
+      
+      }
+    @media (max-width:376px) {
+      .box{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+        width: 360px;
+        height: 800px;
+      }
+      .left-side{
+        width: auto;
+        height: auto;
+        grid-row: 2;
+      }
+      .right-side{
+        width: 360px;
+        height: 200px;
+        grid-row: 1;
+        background-size: cover;
+        border-radius: 25px 25px 0 0 ;
+      }
+      .header {
+        width: 360px;
+        margin: 10px auto;
+        line-height: 45px;
+        padding: 5px;
+        text-align: center;
+      }
+      .paragraph{
+        width: 360px;
+        text-align: center;
+        line-height: 25px;
+      }
+      .sub{
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        margin-left: 50px;
+      }
     }
-    .attribution { font-size: 11px; text-align: center;position: absolute;bottom: 15px;left: 45%; color: var(--ww); }
+    .attribution { font-size: 11px; text-align: center;text-align: center; color: var(--ww); }
     .attribution a { color: var(--white-head); }
   </style>
 </head>
